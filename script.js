@@ -21,3 +21,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //
 });
+
+//Calculator
+function appendToDisplay(value) {
+    document.getElementById('calculator_display').value += value;
+  }
+
+  function clearDisplay() {
+    document.getElementById('calculator_display').value = '';
+  }
+
+  function calculate() {
+    var expression = document.getElementById('calculator_display').value;
+    try {
+      var result = eval(expression);
+      document.getElementById('calculator_display').value = result;
+    } catch (error) {
+      document.getElementById('calculator_display').value = 'Error';
+    }
+  }
+
+//

@@ -70,7 +70,6 @@ main
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
     box-sizing: border-box;
 }
 
@@ -95,7 +94,6 @@ main
 .main_box_button:active {
     opacity: 1;
     transform: scale(0.9);
-    text-shadow: 0 0 5px #01c001, 0 0 10px #01c001, 0 0 20px #01c001;
 }
 
 .box_button_top, .box_button_top::before
@@ -118,7 +116,6 @@ main
     flex-direction: row;
     justify-content: space-around;
     color: white;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
     font-size: 1.5vw;
 }
 
@@ -232,7 +229,6 @@ main
     position: relative;
     box-sizing: border-box;
     color: white;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
     font-size: 1.5vw;
 }
 
@@ -261,3 +257,80 @@ main
 .form button:active {
     transform: scale(0.9);
 }
+
+.section_calculator
+{
+    width:100%;
+    align-items: center;
+    margin:auto;
+    flex-direction: column;
+    display:flex;
+}
+
+.section_calculator div
+{
+    width:40vw;
+    display: flex;
+}
+
+.calculator_button
+{
+    width:4vw;
+    height:4vw;
+    font-size:2vw;
+    background:black;
+    color: white;
+    border: 2px solid #00ff00; 
+    box-sizing: border-box;
+    position:relative;
+}
+
+.calculator_button::before
+{
+    top:0;
+    left:0;
+    content: "";
+    position:absolute;
+    width:100%;
+    height:100%;
+    border: 2px solid #00ff00; 
+    box-sizing: border-box;
+    opacity:0;
+    transform: scale(1.2);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.calculator_button:hover::before
+{
+    opacity:1;
+    transform: scale(1);
+}
+
+.calculator_button:active
+{
+    transform: scale(0.9);
+}
+
+.calculator_button_big
+{
+    font-size:1.4vw;
+    width:12vw;
+}
+
+.calculator_display
+{
+    width:40vw;
+    height:4vw;
+    font-size:1.4vw;
+    background:black;
+    border: 2px solid #00ff00; 
+    box-sizing: border-box;
+    color:white;
+}
+
+.calculator_display:focus
+{
+    outline:none;
+}
+
+
