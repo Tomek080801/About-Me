@@ -42,3 +42,12 @@ function appendToDisplay(value) {
   }
 
 //
+
+//Popup to confirm link opening
+
+function confirmOpen() {
+  var confirmed = confirm("Do you want to open this link in a new tab?");
+  return confirmed;
+}
+
+//
