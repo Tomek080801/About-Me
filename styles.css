@@ -10,6 +10,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile_only
+{
+    display:none;
 }
 
 @keyframes scrollBackground {
@@ -43,6 +49,7 @@ main
 {
     width: 80vw;
     height:80vh;
+    margin-top:10vh;
     display: flex;
     flex-direction:column;
 }
@@ -81,6 +88,7 @@ main
     background-color: black;
     width:15%;
     height:100%;
+    padding:5px;
     border: 2px solid #00ff00; 
     position: relative;
     font-size: 1.5vw;
@@ -238,8 +246,6 @@ main
 
 .form button 
 {
-    margin-top:auto;
-    margin-bottom:auto;
     background-color: black;
     padding:20px;
     border: 2px solid #00ff00; 
@@ -248,6 +254,7 @@ main
     box-sizing: border-box;
     color: white;
     font-size: 1.5vw;
+    margin-top:20px;
 }
 
 .form button::before
@@ -274,6 +281,12 @@ main
 
 .form button:active {
     transform: scale(0.9);
+}
+
+.form_additional
+{
+    display:flex;
+
 }
 
 .section_calculator
@@ -448,3 +461,222 @@ a:focus
     margin:1vh;
     margin-top:3vh;
 }
+
+  @media only screen and (min-width: 601px) and (max-width: 1000px) {
+    
+    .checkbox_box
+    {
+        display:flex;
+        align-items: center;
+    }
+    
+    .about_image
+    {
+        min-width: 240px;
+    }
+
+    .school_container h1
+    {
+        font-size:15px;
+    }
+
+    .school_container h2
+    {
+        font-size:14px;
+    }
+
+    .school_container h3
+    {
+        font-size:13px;
+    }
+
+    .projects_text
+    {
+        font-size:11px;
+    }
+
+    .school_text
+    {
+        font-size:11px;
+    }
+
+    .form textarea 
+    {
+        font-size:14px;
+        min-width:150px;
+    }
+
+    .section_about
+    {
+        font-size:12px;
+    }
+
+    .form button 
+    {
+        font-size: 15px;
+    }
+
+    .input_text, .form select 
+    {
+        font-size:12px;
+        width:200px;
+        height:20px;
+    }
+    
+    .form 
+    {
+        font-size: 14px;
+    }
+
+    .main_box_button 
+    {
+        font-size: 15px;
+        padding:3px;
+    }
+
+    .calculator_button
+    {
+        width:7.5vw;
+        height:7.5vw;
+        font-size:calc(15px+2vw);
+    }
+
+    .calculator_button_big
+    {
+        font-size:calc(10px+2vw);
+        width:15vw;
+        padding:0;
+    }
+
+    .calculator_display
+    {
+        width:60vw;
+        height:calc(30px + 2vw);
+        font-size:calc(12px+2vw);
+    }
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    .about_image
+    {
+        width:100%;
+        margin:0;
+    }
+    .about_container
+    {
+        flex-direction:column;
+        font-size:calc(6px + 1vw);
+    }
+
+    .school_container
+    {
+        flex-direction: column;
+    }
+
+    .school_image
+    {
+        width:100%;
+    }
+
+    .school_container h1
+    {
+        font-size:calc(9px + 1vw);
+    }
+
+    .school_container h2
+    {
+        font-size:calc(8px + 1vw);
+    }
+
+    .school_container h3
+    {
+        font-size:calc(7px + 1vw);
+    }
+
+    .school_text
+    {
+        font-size:calc(6px + 1vw);
+    }
+
+    .projects_text
+    {
+        font-size:calc(6px + 1vw);
+    }
+
+    .form
+    {
+        flex-direction: column;
+        overflow-y: scroll;
+        font-size: calc(12px + 1vw);
+        justify-content:unset;
+        align-items: center;
+    }
+
+    .form button 
+    {
+        font-size: calc(12px + 1vw);
+        max-width: 200px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    .input_text, .form select 
+    {
+        font-size:12px;
+        width:calc(60px + 25vw);
+        height:calc(12px + 2vw);
+    }
+
+    .form textarea 
+    {
+        font-size:calc(10px + 1vw);
+        width: calc(60px + 25vw);
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .section_calculator div
+    {
+        width:60vw;
+    }
+
+    .calculator_button
+    {
+        width:15vw;
+        height:15vw;
+        font-size:calc(12px + 2vw);
+    }
+
+    .calculator_button_big
+    {
+        font-size:calc(6px + 1.4vw);
+        width:30vw;
+        height:20vw;
+        padding:0;
+    }
+
+    .calculator_display
+    {
+        width:60vw;
+        height:calc(30px + 2vw);
+        font-size:calc(7px + 1.4vw);
+    }
+
+    .mobile_only
+    {
+        display:block;
+    }
+
+    .not_on_mobile
+    {
+        display:none;
+        width:0;
+    }
+
+    .main_box_button {
+        width:20%;
+        height:100%;
+        font-size: calc(1px + 2.3vw);
+    }
+  }

@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>sample header</h1>
-    </header>
-
     <main>
         <div class="main_box">
             <div class="main_box_button box_button_top">About Me</div>
@@ -24,7 +19,7 @@
             <div class="main_display_section">
                 <div class="section_about">
                     <div class="about_container">
-                        <img class="about_image" src="photos/samsung.jpg" alt="picture depicts a single building from the samsung factory" style="margin-right: 10px; margin-left:0px;"/>
+                        <a target="_blank" href="photos/samsung.jpg"><img class="about_image" src="photos/samsung.jpg" alt="picture depicts a single building from the samsung factory" style="margin-right: 10px; margin-left:0px;"/></a>
                         Good day, I'm Tomasz Ruszczyk, an experienced professional with a background in production management and web development. 
                         In my role at Samsung Electronics Poland Manufacturing's R&D Department, I managed and operated a production management system, 
                         conducted repairs for various production machinery, and executed workstation adjustments on the assembly line. 
@@ -39,7 +34,7 @@
                         such as a motion-based Unity project, 3D modeling tasks using 3ds Max 2024, and collaborative development of an AI-powered blackjack project in Python. 
                         I hold certifications in EE08 (Assembly and Operation of Computer Systems, Peripheral Devices, and Networks) 
                         and EE09 (Programming, Website Creation, and Database Administration) showcasing my expertise in these areas.
-                        <img class="about_image" src="photos/trol.jpg" alt="picture depicts a building of the trol intermedia firm"/>
+                        <a target="_blank" href="photos/trol.jpg"><img class="about_image" src="photos/trol.jpg" alt="picture depicts a building of the trol intermedia firm"/></a>
                     </div>    
                     <div class="about_container">
                         My journey in technology began as an IT Technician at Technical School No. 1 in Wronki, 
@@ -55,7 +50,7 @@
             <div class="main_display_section">
                 <div class="section_school">
                     <div class="school_container">
-                        <img class="school_image"src="photos/cdv.jpg" alt="picture depicts a school"/>
+                        <a target="_blank" href="photos/cdv.jpg"><img class="school_image"src="photos/cdv.jpg" alt="picture depicts a school"/></a>
                         <div class="school_text">
                             <h1>B.Sc Computer Science</h1>
                             <h2><a href="https://cdv.pl/en/" target="_blank" onclick="return confirmOpen()">Collegium Da Vinci, extramural</a></h2>
@@ -71,7 +66,7 @@
                         </div>
                     </div>
                     <div class="school_container">
-                        <img class="school_image"src="photos/lesna.jpg" alt="picture depicts a school"/>
+                        <a target="_blank" href="photos/lesna.jpg"><img class="school_image"src="photos/lesna.jpg" alt="picture depicts a school"/></a>
                         <div class="school_text">
                             <h1>IT Technician</h1>
                             <h2><a href="https://www.szkolanalesnej.edu.pl/" target="_blank" onclick="return confirmOpen()">Technical School No. 1 in Wronki,</a></h2>
@@ -91,8 +86,9 @@
                     <div class="student_projects">
                         <div class="projects_text">
                             In this section i will present a few of my projects im sure the number of them will keep
-                            increasing overtime but for now these are all that i could upload
-                            These are some of the projects i had the pleasure of working on as a student therefore most of them are unfortunately in polish
+                            increasing overtime but for now these are all that i could upload.
+                            These are some of the projects i had the pleasure of working on as a student therefore most of them are unfortunately in polish.
+                            If the images become unreadable then press on them to open htem in a new page
                         </div>
                         <div class="projects_figma">
                             <div class="projects_text">
@@ -105,20 +101,20 @@
                             <div class="projects_text">
                                 This project is about making a BPMN ( Business Process Model and Notation ) of making and online purchase from the shop empik
                             </div>
-                            <img class="projects_image" src="photos/BPMN.png" alt="picture depicts a bpmn schema"/>
+                            <a target="_blank" href="photos/BPMN.png"><img class="projects_image" src="photos/BPMN.png" alt="picture depicts a bpmn schema"/></a>
                         </div>
                         <div class="projects_functional">
                             <div class="projects_text">
                                 This project is about making a functional decomposition of the linkedin page
                             </div>
-                            <img class="projects_image" src="photos/Dekompozycja_funkcjonalna.png" alt="picture depicts a functional decomposition"/>
+                            <a target="_blank" href="photos/Dekompozycja_funkcjonalna.png"><img class="projects_image" src="photos/Dekompozycja_funkcjonalna.png" alt="picture depicts a functional decomposition"/></a>
                         </div>
                         <div class="projects_trelo">
                             <div class="projects_text">
                                 This project is about making a board of tasks in trelo for a fake project of a school managment system and its spliced into 2 parts as it would be pretty unreadable
                             </div>
-                            <img class="projects_image" src="photos/trelo1.jpg" alt="picture depicts a the first part of trelo schema"/>
-                            <img class="projects_image" src="photos/trelo2.jpg" alt="picture depicts a the second part of trelo schema"/>
+                            <a target="_blank" href="photos/trelo1.jpg"><img class="projects_image" src="photos/trelo1.jpg" alt="picture depicts a the first part of trelo schema"/></a>
+                            <a target="_blank" href="photos/trelo2.jpg"><img class="projects_image" src="photos/trelo2.jpg" alt="picture depicts a the second part of trelo schema"/></a>
                         </div> 
                     </div>
                 </div>
@@ -183,56 +179,77 @@
                             <input type="checkbox" name="high"> <span></span>High
                         </label>
                     </div>
-
-                    <div class="from_other">
-                        <label for="other">Addictional Information</label>
-                        <textarea id="other" name="other" rows="10" required></textarea>
+                    <div class="form_additional">
+                        <div class="from_other">
+                            <label for="other">Addictional Information</label>
+                            <textarea id="other" name="other" rows="10" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Submit</button>
                     </div>
-                    
-                    <button type="submit">Submit</button>
                 </form>
             </div>
 
-            <div class="main_display_section">
+            <div class="main_display_section" style="overflow-y:scroll">
                 <div class="section_calculator">
                     <div>
                         <input class="calculator_display" type="text" id="calculator_display" readonly>
                     </div>
                     
                     <div>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('40')">debugging/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('40')">debugging/h</button>
                         <button class="calculator_button" onclick="appendToDisplay('1')">1</button>
                         <button class="calculator_button" onclick="appendToDisplay('2')">2</button>
                         <button class="calculator_button" onclick="appendToDisplay('3')">3</button>
                         <button class="calculator_button" onclick="appendToDisplay('+')">+</button>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('50')">designing a webpage/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('50')">designing a webpage/h</button>
                     </div>
                     
                     <div>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('80')">designing a database/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('80')">designing a database/h</button>
                         <button class="calculator_button" onclick="appendToDisplay('4')">4</button>
                         <button class="calculator_button" onclick="appendToDisplay('5')">5</button>
                         <button class="calculator_button" onclick="appendToDisplay('6')">6</button>
                         <button class="calculator_button" onclick="appendToDisplay('-')">-</button>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('60')">product page/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('60')">product page/h</button>
                     </div>
                     
                     <div>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('30')">contact page/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('30')">contact page/h</button>
                         <button class="calculator_button" onclick="appendToDisplay('7')">7</button>
                         <button class="calculator_button" onclick="appendToDisplay('8')">8</button>
                         <button class="calculator_button" onclick="appendToDisplay('9')">9</button>
                         <button class="calculator_button" onclick="appendToDisplay('*')">*</button>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('60')">customer support/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('60')">customer support/h</button>
                     </div>
                     
                     <div>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('40')">vlog page/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('40')">vlog page/h</button>
                         <button class="calculator_button" onclick="appendToDisplay('0')">0</button>
                         <button class="calculator_button" onclick="clearDisplay()">C</button>
                         <button class="calculator_button" onclick="calculate()">=</button>
                         <button class="calculator_button" onclick="appendToDisplay('/')">/</button>
-                        <button class="calculator_button calculator_button_big" onclick="appendToDisplay('100')">full package/h</button>
+                        <button class="calculator_button calculator_button_big not_on_mobile" onclick="appendToDisplay('100')">full package/h</button>
+                    </div>
+                        
+                    <div>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('40')">debugging/h</button>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('50')">designing a webpage/h</button>
+                    </div>
+                        
+                    <div>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('80')">designing a database/h</button>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('60')">product page/h</button>
+                    </div>
+                        
+                    <div>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('30')">contact page/h</button>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('60')">customer support/h</button>
+                    </div>
+
+                    <div>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('40')">vlog page/h</button>
+                        <button class="calculator_button calculator_button_big mobile_only" onclick="appendToDisplay('100')">full package/h</button>
                     </div>
                 </div>
             </div>
@@ -246,12 +263,6 @@
             <div class="main_box_button box_button_bottom">Calculator</div>
         </div>
     </main>
-
-    <footer>
-        <p>sample footer</p>
-    </footer>
-
-
     <script src="script.js"></script>
 </body>
 </html>
