@@ -21,6 +21,24 @@ body {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #000; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00ff00; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc00; 
+}
+
 main 
 {
     width: 80vw;
@@ -412,20 +430,21 @@ a:focus
     margin-left:10px;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
+.section_projects 
+{
+    overflow-y: scroll;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #000; 
+.projects_image
+{
+    width:90%;
+    margin-left:5%;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #00ff00; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #00cc00; 
+.projects_text
+{
+    text-align: center;
+    font-size:1.5vw;
+    margin:1vh;
+    margin-top:3vh;
 }
