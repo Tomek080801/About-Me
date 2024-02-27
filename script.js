@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var displays = document.querySelectorAll('.main_display_section');
     
     boxes.forEach(function(box_button,box_index) {
+      if(box_button.getAttribute("href")==null)
+      {
         box_button.addEventListener('click', function() {
             displays.forEach(function(display_box,display_index) {
                 if(box_index==display_index)
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+      }
     });
 
     //
